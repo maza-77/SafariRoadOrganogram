@@ -1,0 +1,29 @@
+graph TD
+    A[CEO & Owner<br>John Dawson<br>60% shares<br>Bellville Cape Town] --> B[Financial Director<br>June Fines<br>+ Finance team & 4 clerks]
+    A --> C[HR Director<br>Jenny Gasson<br>+ 4 HR Consultants]
+    A --> D[Operations Director<br>Eric Kloppers<br>+ 2 Deputies & clerical team]
+    A --> E[Sales & Marketing Director<br>Johan Coetzee]
+
+    D --> F[Branch Managers<br>One per region<br>9 SA Provinces + Namibia<br>Botswana, Zimbabwe, Mozambique]
+
+    F --> G[Rental Consultants<br>2–12 per branch<br>Handle enquiries, quotes,<br>check-in/out]
+    F --> H[Fleet Supervisor]
+    H --> I[Service Clerks<br>Prepare vehicles & job cards]
+    H --> J[Mechanics<br>Repairs & complex setups]
+    H --> K[Drivers<br>Transfers & deliveries]
+
+    F --> L[Branch Bookkeepers<br>Financial duties<br>Report dotted to Head Office Finance]
+
+    E --> M[PR Manager<br>+ 2 Copywriters<br>+ 2 Designers]
+    E --> N[Sales Consultants<br>3 persons<br>Corporate & large deals]
+
+    %% Styling for clarity
+    classDef ceo fill:#1a2537,stroke:#fff,stroke-width:3px,color:#fff,font-weight:bold
+    classDef director fill:#0b6e3a,stroke:#fff,color:#fff
+    classDef manager fill:#6a1b9a,stroke:#fff,color:#fff
+    classDef staff fill:#c85a17,stroke:#fff,color:#fff
+
+    class A ceo
+    class B,C,D,E director
+    class F,H manager
+    class G,I,J,K,L,M,N staff

@@ -1,0 +1,31 @@
+body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 20px; text-align: center; color: #333; }
+h1 { color: #1a3c6e; margin-bottom: 30px; }
+
+.org-chart { max-width: 1400px; margin: auto; position: relative; }
+.level { margin: 60px 0; position: relative; display: flex; flex-direction: column; align-items: center; }
+.nodes { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; position: relative; }
+.subtree { display: flex; flex-direction: column; align-items: center; min-width: 300px; }
+
+.node {
+  background: #4a90e2; color: white; padding: 12px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  min-width: 180px; text-align: center; position: relative; margin: 15px 0;
+}
+.node.ceo { background: #2c3e50; font-size: 1.2em; min-width: 260px; }
+.node.director { background: #27ae60; }
+.node.manager, .node.supervisor { background: #8e44ad; }
+.node.staff { background: #e67e22; color: #fff; }
+.node.bookkeeper { background: #95a5a6; }
+
+.title { font-weight: bold; font-size: 1.1em; }
+.subtitle { font-size: 0.85em; opacity: 0.9; }
+.small { font-size: 0.8em; }
+
+.v-line { width: 3px; background: #7f8c8d; position: absolute; left: 50%; transform: translateX(-50%); z-index: -1; }
+.v-line.short { height: 60px; top: -60px; }
+.v-line.very-short { height: 40px; top: -40px; }
+.v-line.ops-line { height: 120px; top: -120px; }
+.v-line.sales-line { height: 120px; top: -120px; left: 75%; }
+
+.h-line { height: 3px; background: #7f8c8d; width: 80%; position: absolute; top: -30px; left: 10%; z-index: -1; }
+
+@media (max-width: 1000px) { .nodes { flex-direction: column; gap: 30px; } .v-line, .h-line { display: none; } }

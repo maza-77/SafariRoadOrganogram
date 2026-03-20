@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safari Off-Road Organogram</title>
+  <link rel="stylesheet" href="./organo.css">
+</head>
+<body>
+  <h1>Safari Off-Road Car Hire - Functional Organogram</h1>
+
+  <div class="org-chart">
+    <!-- CEO -->
+    <div class="level">
+      <div class="node ceo">
+        <div class="title">CEO & Owner</div>
+        <div class="subtitle">John Dawson (60% shares)</div>
+        <div class="subtitle small">Bellville, Cape Town</div>
+      </div>
+    </div>
+
+    <!-- Directors -->
+    <div class="level">
+      <div class="v-line"></div>
+      <div class="h-line"></div>
+      <div class="nodes">
+        <div class="node director">
+          <div class="title">Financial Director</div>
+          <div class="subtitle">June Fines</div>
+          <div class="subtitle small">+ Finance team & clerks</div>
+        </div>
+        <div class="node director">
+          <div class="title">HR Director</div>
+          <div class="subtitle">Jenny Gasson</div>
+          <div class="subtitle small">+ 4 HR Consultants</div>
+        </div>
+        <div class="node director ops">
+          <div class="title">Operations Director</div>
+          <div class="subtitle">Eric Kloppers</div>
+          <div class="subtitle small">+ 2 Deputies & team</div>
+        </div>
+        <div class="node director">
+          <div class="title">Sales & Marketing Director</div>
+          <div class="subtitle">Johan Coetzee</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branches & Sales/Marketing split -->
+    <div class="level">
+      <div class="v-line short ops-line"></div>
+      <div class="v-line short sales-line"></div>
+      <div class="nodes branch">
+        <!-- Operations branch -->
+        <div class="subtree">
+          <div class="node manager">
+            <div class="title">Branch Managers</div>
+            <div class="subtitle small">(9 Provinces + Namibia, Botswana, Zimbabwe, Mozambique)</div>
+          </div>
+          <div class="v-line short"></div>
+          <div class="nodes">
+            <div class="node staff">
+              <div class="title">Rental Consultants</div>
+              <div class="subtitle small">(2–12 per branch)</div>
+            </div>
+            <div class="node supervisor">
+              <div class="title">Fleet Supervisor</div>
+            </div>
+            <div class="node staff bookkeeper">
+              <div class="title">Branch Bookkeepers</div>
+              <div class="subtitle small">(report to Head Office Finance)</div>
+            </div>
+          </div>
+          <div class="v-line very-short"></div>
+          <div class="nodes">
+            <div class="node staff">
+              <div class="title">Service Clerks</div>
+            </div>
+            <div class="node staff">
+              <div class="title">Mechanics</div>
+            </div>
+            <div class="node staff">
+              <div class="title">Drivers</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sales & Marketing branch -->
+        <div class="subtree sales">
+          <div class="node staff">
+            <div class="title">PR Manager + 2 Copywriters + 2 Designers</div>
+          </div>
+          <div class="node staff">
+            <div class="title">Sales Consultants (3)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./organo.js"></script>
+</body>
+</html>
